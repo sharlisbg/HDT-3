@@ -1,6 +1,7 @@
 package scr;
 /**
  * Shellsort es una clase que implementa el algoritmo de Shellsort para ordenar un arraylist de enteros
+ * Codigo recuperado de: baledung (2022) Shell Sort in Java, Baeldung. Available at: https://www.baeldung.com/java-shell-sort (Accessed: February 6, 2023). 
  * @author Leonel Contreras 18797
  * @version 1.0
  */
@@ -12,7 +13,7 @@ public class Shellsort {
     /**
      * shellsort es un metodo que implementa el algoritmo de shellsort para ordenar un arraylist de enteros
      * Se declara static para poder utilizarlo sin necesidad de crear una instancia de Shellsort
-     * @param listaaordenar
+     * @param listaaordenar es un arraylist de enteros que se desea ordenar
      */
     public static void shellsort(ArrayList <Integer> listaaordenar) {
         int n = listaaordenar.size();

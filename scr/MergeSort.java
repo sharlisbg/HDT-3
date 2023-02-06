@@ -1,8 +1,10 @@
 package scr;
 
 /**
- * @author Baeldung  https://www.baeldung.com/java-merge-sort#:~:text=Merge%20sort%20is%20a%20%E2%80%9Cdivide,final%20solution%20to%20the%20problem. 
- * @version 1.0
+ * MergeSort es la clase que implementa el algoritmo de MergeSort
+ * @author Leonel Contreras 18797
+ * Codigo recuperado de: 
+ * @version 2.0
  */
 
 public class MergeSort {
