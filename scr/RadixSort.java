@@ -30,9 +30,9 @@ public class RadixSort {
         // post: data in the array are sorted into increasing order
         {
         for (int i = 0; i < 6; i++)
-        {
-        bucketPass(data,i);
-        }
+            {
+            bucketPass(data,i);
+            }
         }
 
 

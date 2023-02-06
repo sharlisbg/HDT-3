@@ -5,7 +5,8 @@ import static org.junit.Assert.assertArrayEquals;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+import java.util.Comparator;
+import java.util.Vector;
 import org.junit.Test;
 
 
@@ -43,10 +44,15 @@ public class test {
 	public void QuickTest(){
         int[] actual = { 5, 1, 6, 2, 3, 4 };
         int[] expected = { 1, 2, 3, 4, 5, 6 };
-        QuickSort.
+        QuickSort.quickSort(actual, 0, actual.length -1, new ComparadorEnteros<Integer>());
         assertArrayEquals(expected, actual);
-	}
+    }
 
-
-    
+    @Test
+	public void RadixTest(){
+        int[] actual = { 5, 1, 6, 2, 3, 4 };
+        int[] expected = { 1, 2, 3, 4, 5, 6 };
+        RadixSort.radixSort(actual);
+        assertArrayEquals(expected, actual);
+    }
 }

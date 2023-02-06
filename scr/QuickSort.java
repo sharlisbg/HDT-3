@@ -11,14 +11,14 @@ import java.util.Comparator;
  */
 public class QuickSort {
 
-	 /***
+	/***
 		 * Sorts the specified array of objects using recursive quicksort 
 		 * sort algorithm.
 		 * @param myArray List of elements need to be sorted
 		 * @param inf lower index limit of the array, when you call this method you should us 0
 		 * @param sup upper index limit of the array, when you call this method you should us .size  - 1 or .length - 1 
 		 */
-	   public void quickSort(int[] myArray, int inf, int sup, Comparator<Integer> myCompare) {
+	   public static void quickSort(int[] myArray, int inf, int sup, Comparator<Integer> myCompare) {
 		   int i = inf - 1;
 		   int j = sup;
 		   boolean flag = true;
