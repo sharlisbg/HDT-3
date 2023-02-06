@@ -1,6 +1,7 @@
 package scr;
 /**
- * InsertionSort es la clase que implementa el insertion sort.
+ * InsertionSort es la clase que implementa el insertion sort. 
+ * Bailey, D.A. (2007) “Insertion Sort,” in Java Structures. Data Structures in Java for the Principled Programmer. 2nd edn. Wiliams College, pp. 125–127. 
  * @author Leonel Contreras
  * @version 1.0
  */
