@@ -1,7 +1,7 @@
 /**
  * 
  */
-package src;
+package scr;
 
 import java.util.Comparator;
 
@@ -9,7 +9,7 @@ import java.util.Comparator;
  * @author MAAG
  *
  */
-public class QuickSort<T> {
+public class QuickSort {
 
 	 /***
 		 * Sorts the specified array of objects using recursive quicksort 
@@ -18,18 +18,18 @@ public class QuickSort<T> {
 		 * @param inf lower index limit of the array, when you call this method you should us 0
 		 * @param sup upper index limit of the array, when you call this method you should us .size  - 1 or .length - 1 
 		 */
-	   public void quickSort(T[] myArray, int inf, int sup, Comparator<T> myCompare) {
+	   public void quickSort(int[] myArray, int inf, int sup, Comparator<Integer> myCompare) {
 		   int i = inf - 1;
 		   int j = sup;
 		   boolean flag = true;
-		   T temp;
+		   int temp;
 		   
 		   
 		   if (inf >= sup) {
 			   return;
 		   }
 		   
-		   T elem_div = myArray[sup];
+		   int elem_div = myArray[sup];
 		   
 		   
 		   while (flag) {

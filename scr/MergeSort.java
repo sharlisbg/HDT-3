@@ -1,4 +1,4 @@
-package src;
+package scr;
 
 /**
  * @author Baeldung  https://www.baeldung.com/java-merge-sort#:~:text=Merge%20sort%20is%20a%20%E2%80%9Cdivide,final%20solution%20to%20the%20problem. 

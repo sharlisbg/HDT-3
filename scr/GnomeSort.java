@@ -1,4 +1,4 @@
-package src;
+package scr;
 
 /**
  * @author obtenido desde https://www.geeksforgeeks.org/java-program-for-gnome-sort/ 

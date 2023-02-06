@@ -1,4 +1,4 @@
-package src;
+package scr;
 
 import java.util.Vector;
 
