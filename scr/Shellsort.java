@@ -1,3 +1,4 @@
+package scr;
 /**
  * Shellsort es una clase que implementa el algoritmo de Shellsort para ordenar un arraylist de enteros
  * @author Leonel Contreras 18797

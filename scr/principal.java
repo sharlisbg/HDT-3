@@ -1,8 +1,11 @@
+package scr;
+
 /*import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.awt.Component;
 import java.io.*;*/
 import java.util.ArrayList;
+import java.util.Scanner;
 
 //import javax.swing.JOptionPane;
 
@@ -10,12 +13,14 @@ import java.util.ArrayList;
 public class principal {
     public static void main(String[] args) {
         int numero;
+        Scanner in = new Scanner(System.in);
+        
         //String numCadena;   
         //ArrayList<String> lec = new ArrayList<String>();
-        ArrayList<Integer> numeros = new ArrayList<Integer>();
-        ArrayList<Integer> numeros2 = new ArrayList<Integer>();
-        ArrayList<Integer> numeros3 = new ArrayList<Integer>();
-        ArrayList<Integer> numeros4 = new ArrayList<Integer>();
+        ArrayList<Integer> numeros = new ArrayList<Integer>(); /* 3000 */
+        ArrayList<Integer> numeros2 = new ArrayList<Integer>(); /* 10 */
+        ArrayList<Integer> numeros3 = new ArrayList<Integer>(); /* 100 */
+        ArrayList<Integer> numeros4 = new ArrayList<Integer>(); /* 1000 */
         
         for (int a = 1; a <= 10; a++) {
             numero = (int) (Math.random() * 18500 + 1);
@@ -54,10 +59,16 @@ public class principal {
             }
         }
 
-        System.out.println(numeros);
-        System.out.println(numeros2);
-        System.out.println(numeros3);
-        System.out.println(numeros4);
+        //Comparación usando BubbleSort
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 10");
+		EscribirArrayList(numeros);
+		System.out.println("ORDENANDO...");
+        BubbleSort.bubbleSort(numeros);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros);
+		
+		System.out.println("Presione una tecla para continuar con quicksort");
+		in.nextLine();
 
     /* private static String DELIMITADOR=";";  
 
@@ -90,6 +101,18 @@ public class principal {
             lec = new ArrayList(fileText.split(DELIMITADOR));
         
         }*/
+    }
+
+    public static void EscribirArrayList(ArrayList<Integer> _items) {
+        for (int i = 0; i < _items.size(); i++) {
+            System.out.println("[" + i + "] => " + _items.get(i).toString());
+        }
+    }
+    
+    public static void EscribirArreglo(Integer[] arreglo) {
+        for (int i = 0; i < arreglo.length; i++) {
+            System.out.println("[" + i + "] => " + arreglo[i]);
+        }
     }
 
 }
