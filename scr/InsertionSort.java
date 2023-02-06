@@ -1,3 +1,4 @@
+package scr;
 /**
  * InsertionSort es la clase que implementa el insertion sort.
  * @author Leonel Contreras
