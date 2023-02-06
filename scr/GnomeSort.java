@@ -3,9 +3,10 @@ import java.util.ArrayList;
 
 
 /**
+ * GnomeSort es la clase que imolementa el algoritmo de GnomeSort para ordenar un arraylist de enteros
  * @author Leonel Contreras 18797
  * obtenido desde https://www.geeksforgeeks.org/java-program-for-gnome-sort/ 
- * @version 1.0
+ * @version 2.0
  */
 
 public class GnomeSort {
@@ -23,16 +24,23 @@ public class GnomeSort {
         while (index < n) {
             // validamos si el indice es igual a cero
             if (index == 0){
+                // agregamos en uno el indice
                 index++;
             }
 
+            // validamos si el valor en la posicion actual es mayor al valor en la posicion antecesora
             if (listaaordenar.get(index)>= listaaordenar.get(index-1)){
+                // nos movemos una posicion hacia adelante
                 index++;
             }else {
-            temp = listaaordenar.get(index);         
-            listaaordenar.set(index,listaaordenar.get(index-1));
-            listaaordenar.set(index-1, temp);            
-            index--;
+                // asignamos a una variable temporal el valor de la posicion actual
+                temp = listaaordenar.get(index);  
+                // colocamos en la posicion actual el valor en la posicion anterior       
+                listaaordenar.set(index,listaaordenar.get(index-1));
+                // movemos, a la posicion anterior, el valor menor
+                listaaordenar.set(index-1, temp);            
+                // restamos en uno el indice
+                index--;
             }
         }
         //return;
