@@ -10,7 +10,9 @@ public class BubbleSort {
 
     
     /** 
-     * @param numerosaordenar
+     * El metodo bubbleSort implementa el algoritmo de bubbleSort para ordenar un arraylist de enteros. 
+     * Se declara el metodo static para poder utilizarlo sin necesidad de crear una instancia de la clase
+     * @param numerosaordenar es un ArrayList de enteros los cuales vamos a ordenar 
      */
     public static void bubbleSort(ArrayList<Integer> numerosaordenar) {
         // declaramos un contador del numero de elementos ordenados
