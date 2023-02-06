@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 /**
  * BubbleSort es una clase que utiliza el bubblesort para ordenar un array de enteros
+ * Codigo obtenido en: Bailey, D.A. (2007) “Sorting ,” in Java Structures: Data Structures in Java for the Principled Programmer. 2nd edn. Williams College, p. 136. 
  * @author Leonel Contreras 18797
  * @version 1.0
  */
