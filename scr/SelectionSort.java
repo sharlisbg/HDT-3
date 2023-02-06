@@ -10,7 +10,7 @@ public class SelectionSort {
     /**
      * selectionSort es un metodo que utiliza el algoritmo de selection sort para ordenar un arraylist de enteros.
      * Declaramos el metodo static para poder ser utilizado sin necesidad de crear una instancia de SelectionSort
-     * @param listaaordenar
+     * @param listaaordenar es un arraylist con los enteros a ordenar
      */
     public static void selectionSort(ArrayList<Integer> listaaordenar) {
         // declaramos tres enteros que nos serviran en el algoritmo
