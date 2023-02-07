@@ -6,6 +6,8 @@ import java.awt.Component;
 import java.io.*;*/
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Comparator;
+import java.util.List;
 
 //import javax.swing.JOptionPane;
 
@@ -61,14 +63,132 @@ public class principal {
 
         //Comparación usando BubbleSort
 		System.out.println("NUMEROS DESORDENADOS CANTIDAD 10");
+		EscribirArrayList(numeros2);
+		System.out.println("ORDENANDO...");
+        BubbleSort.bubbleSort(numeros2);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros2);
+
+        System.out.println("Presione una tecla para continuar BubbleSort 100");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 100");
+		EscribirArrayList(numeros3);
+		System.out.println("ORDENANDO...");
+        BubbleSort.bubbleSort(numeros3);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros3);
+
+		System.out.println("Presione una tecla para continuar BubbleSort 1000");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 1000");
+		EscribirArrayList(numeros4);
+		System.out.println("ORDENANDO...");
+        BubbleSort.bubbleSort(numeros4);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros4);
+        
+        System.out.println("Presione una tecla para continuar BubbleSort 3000");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 3000");
 		EscribirArrayList(numeros);
 		System.out.println("ORDENANDO...");
         BubbleSort.bubbleSort(numeros);
 		System.out.println("NUMEROS ORDENADOS");
 		EscribirArrayList(numeros);
-		
-		System.out.println("Presione una tecla para continuar con quicksort");
+
+        System.out.println("Presione una tecla para continuar con GnomeSort");
 		in.nextLine();
+
+
+
+
+        
+        //Comparación usando GnomeSort
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 10");
+		EscribirArrayList(numeros2);
+		System.out.println("ORDENANDO...");
+        GnomeSort.gnomeSort(numeros2);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros2);
+
+        System.out.println("Presione una tecla para continuar GnomeSort 100");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 100");
+		EscribirArrayList(numeros3);
+		System.out.println("ORDENANDO...");
+        GnomeSort.gnomeSort(numeros3);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros3);
+
+		System.out.println("Presione una tecla para continuar GnomeSort 1000");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 1000");
+		EscribirArrayList(numeros4);
+		System.out.println("ORDENANDO...");
+        GnomeSort.gnomeSort(numeros4);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros4);
+        
+        System.out.println("Presione una tecla para continuar GnomeSort 3000");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 3000");
+		EscribirArrayList(numeros);
+		System.out.println("ORDENANDO...");
+        GnomeSort.gnomeSort(numeros);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros);
+
+        System.out.println("Presione una tecla para continuar con QuickSort");
+		in.nextLine();
+
+
+
+
+        //Comparación usando QuickSort
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 10");
+		EscribirArrayList(numeros2);
+		System.out.println("ORDENANDO...");
+        int[] n = (int[])numeros2.toArray(int[numeros2.size()]);
+        QuickSort.quickSort(n, 0, n.length, new ComparadorEnteros<Integer>());
+
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros2);
+
+        System.out.println("Presione una tecla para continuar QuickSort 100");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 100");
+		EscribirArrayList(numeros3);
+		System.out.println("ORDENANDO...");
+        BubbleSort.bubbleSort(numeros3);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros3);
+
+		System.out.println("Presione una tecla para continuar QuickSort 1000");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 1000");
+		EscribirArrayList(numeros4);
+		System.out.println("ORDENANDO...");
+        BubbleSort.bubbleSort(numeros4);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros4);
+        
+        System.out.println("Presione una tecla para continuar QuickSort 3000");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 3000");
+		EscribirArrayList(numeros);
+		System.out.println("ORDENANDO...");
+        BubbleSort.bubbleSort(numeros);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArrayList(numeros);
+
+        System.out.println("Presione una tecla para continuar con ");
+		in.nextLine();
+
+
+
+
+
+
 
     /* private static String DELIMITADOR=";";  
 

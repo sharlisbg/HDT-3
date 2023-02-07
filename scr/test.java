@@ -31,10 +31,11 @@ public class test {
 
     @Test
 	public void GnomeTest(){
-        int[] actual = { 5, 1, 6, 2, 3, 4 };
+        ArrayList<Integer> actual = new ArrayList<>(Arrays.asList(5, 1, 6, 2, 3, 4));
         int[] expected = { 1, 2, 3, 4, 5, 6 };
-        GnomeSort.gnomeSort(actual, actual.length);
-        assertArrayEquals(expected, actual);
+        GnomeSort.gnomeSort(actual);
+        Integer a[] = actual.toArray(new Integer[actual.size()]); 
+        assertArrayEquals2(expected, a);
 	}
 
     @Test
