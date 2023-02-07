@@ -1,5 +1,9 @@
 package scr;
 
+/*
+ * @author: Ejercicio en clase MAAG y Sharis Barrios
+ */
+
 /*import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.awt.Component;
@@ -23,6 +27,30 @@ public class principal {
         ArrayList<Integer> numeros2 = new ArrayList<Integer>(); /* 10 */
         ArrayList<Integer> numeros3 = new ArrayList<Integer>(); /* 100 */
         ArrayList<Integer> numeros4 = new ArrayList<Integer>(); /* 1000 */
+        int [] numeros5 = new int[10]; /* 10 */
+        int [] numeros6 = new int[100]; /* 10 */
+        int [] numeros7 = new int[1000]; /* 10 */
+        int [] numeros8 = new int[3000]; /* 10 */
+
+        for (int a = 0; a <= 9; a++) {
+            numero = (int) (Math.random() * 18500 + 1);
+            numeros5[a] = numero;
+        }
+
+        for (int a = 0; a <= 99; a++) {
+            numero = (int) (Math.random() * 18500 + 1);
+            numeros6[a] = numero;
+        }
+
+        for (int a = 0; a <= 999; a++) {
+            numero = (int) (Math.random() * 18500 + 1);
+            numeros7[a] = numero;
+        }
+
+        for (int a = 0; a <= 2999; a++) {
+            numero = (int) (Math.random() * 18500 + 1);
+            numeros8[a] = numero;
+        }
         
         for (int a = 1; a <= 10; a++) {
             numero = (int) (Math.random() * 18500 + 1);
@@ -146,46 +174,120 @@ public class principal {
 
         //Comparación usando QuickSort
 		System.out.println("NUMEROS DESORDENADOS CANTIDAD 10");
-		EscribirArrayList(numeros2);
+		EscribirArreglo(numeros5);
 		System.out.println("ORDENANDO...");
-        int[] n = (int[])numeros2.toArray(int[numeros2.size()]);
-        QuickSort.quickSort(n, 0, n.length, new ComparadorEnteros<Integer>());
-
+        QuickSort.quickSort(numeros5, 0, numeros5.length, new ComparadorEnteros<Integer>());
 		System.out.println("NUMEROS ORDENADOS");
-		EscribirArrayList(numeros2);
+		EscribirArreglo(numeros5);
 
         System.out.println("Presione una tecla para continuar QuickSort 100");
 		in.nextLine();
 		System.out.println("NUMEROS DESORDENADOS CANTIDAD 100");
-		EscribirArrayList(numeros3);
+		EscribirArreglo(numeros6);
 		System.out.println("ORDENANDO...");
-        BubbleSort.bubbleSort(numeros3);
+        QuickSort.quickSort(numeros6, 0, numeros6.length, new ComparadorEnteros<Integer>());
 		System.out.println("NUMEROS ORDENADOS");
-		EscribirArrayList(numeros3);
+		EscribirArreglo(numeros6);
 
 		System.out.println("Presione una tecla para continuar QuickSort 1000");
 		in.nextLine();
 		System.out.println("NUMEROS DESORDENADOS CANTIDAD 1000");
-		EscribirArrayList(numeros4);
+		EscribirArreglo(numeros7);
 		System.out.println("ORDENANDO...");
-        BubbleSort.bubbleSort(numeros4);
+        QuickSort.quickSort(numeros7, 0, numeros7.length, new ComparadorEnteros<Integer>());
 		System.out.println("NUMEROS ORDENADOS");
-		EscribirArrayList(numeros4);
+		EscribirArreglo(numeros7);
         
         System.out.println("Presione una tecla para continuar QuickSort 3000");
 		in.nextLine();
 		System.out.println("NUMEROS DESORDENADOS CANTIDAD 3000");
-		EscribirArrayList(numeros);
+		EscribirArreglo(numeros8);
 		System.out.println("ORDENANDO...");
-        BubbleSort.bubbleSort(numeros);
+        QuickSort.quickSort(numeros8, 0, numeros8.length, new ComparadorEnteros<Integer>());
 		System.out.println("NUMEROS ORDENADOS");
-		EscribirArrayList(numeros);
+		EscribirArreglo(numeros8);
 
-        System.out.println("Presione una tecla para continuar con ");
+
+        System.out.println("Presione una tecla para continuar con MergeSort");
 		in.nextLine();
 
 
 
+        //Comparación usando MergeSort
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 10");
+		EscribirArreglo(numeros5);
+		System.out.println("ORDENANDO...");
+        MergeSort.mergeSort(numeros5, numeros5.length);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArreglo(numeros5);
+
+        System.out.println("Presione una tecla para continuar MergeSort 100");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 100");
+		EscribirArreglo(numeros6);
+		System.out.println("ORDENANDO...");
+        MergeSort.mergeSort(numeros6, numeros6.length);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArreglo(numeros6);
+
+		System.out.println("Presione una tecla para continuar MergeSort 1000");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 1000");
+		EscribirArreglo(numeros7);
+		System.out.println("ORDENANDO...");
+        MergeSort.mergeSort(numeros7, numeros7.length);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArreglo(numeros7);
+        
+        System.out.println("Presione una tecla para continuar MergeSort 3000");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 3000");
+		EscribirArreglo(numeros8);
+		System.out.println("ORDENANDO...");
+        MergeSort.mergeSort(numeros8, numeros8.length);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArreglo(numeros8);
+
+
+        System.out.println("Presione una tecla para continuar con RadixSort");
+		in.nextLine();
+
+
+
+        //Comparación usando RadixSort
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 10");
+		EscribirArreglo(numeros5);
+		System.out.println("ORDENANDO...");
+        RadixSort.radixSort(numeros5);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArreglo(numeros5);
+
+        System.out.println("Presione una tecla para continuar RadixSort 100");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 100");
+		EscribirArreglo(numeros6);
+		System.out.println("ORDENANDO...");
+        RadixSort.radixSort(numeros6);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArreglo(numeros6);
+
+		System.out.println("Presione una tecla para continuar RadixSort 1000");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 1000");
+		EscribirArreglo(numeros7);
+		System.out.println("ORDENANDO...");
+        RadixSort.radixSort(numeros7);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArreglo(numeros7);
+        
+        System.out.println("Presione una tecla para continuar RadixSort 3000");
+		in.nextLine();
+		System.out.println("NUMEROS DESORDENADOS CANTIDAD 3000");
+		EscribirArreglo(numeros8);
+		System.out.println("ORDENANDO...");
+        RadixSort.radixSort(numeros8);
+		System.out.println("NUMEROS ORDENADOS");
+		EscribirArreglo(numeros8);
 
 
 
@@ -229,7 +331,7 @@ public class principal {
         }
     }
     
-    public static void EscribirArreglo(Integer[] arreglo) {
+    public static void EscribirArreglo(int[] arreglo) {
         for (int i = 0; i < arreglo.length; i++) {
             System.out.println("[" + i + "] => " + arreglo[i]);
         }
