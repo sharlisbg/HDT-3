@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 /**
  * SelectionSort es la clase que tiene el metodo selectionSort que ordena un array de enteros usando el algoritmo de selectionSort
+ * Codigo obtenido en: Bailey, D.A. (2007) “Selection Sort ,” in Java Structures: Data Structures in Java for the Principled Programmer. 2nd edn. Williams College, p. 122-125.
  * @author Leonel Contreras 18797
  * @version 1.0
  */

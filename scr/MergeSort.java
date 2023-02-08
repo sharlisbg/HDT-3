@@ -2,7 +2,6 @@ package scr;
 
 /**
  * MergeSort es la clase que implementa el algoritmo de MergeSort
- * @author Leonel Contreras 18797
  * Codigo recuperado de: 
  * @version 2.0
  */
